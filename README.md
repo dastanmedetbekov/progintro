@@ -5,28 +5,28 @@
 This section focuses on core C language fundamentals: arithmetic operations, bit manipulation, formatted output, simple functions, and basic input processing. The tasks gradually move from simple operations to small algorithmic exercises.
 
 - [x] 4.01 — Math and Bit Operations  
-  Basic arithmetic operations (`+ - * / %`) and introductory bitwise operations (`& | ^ ~ << >>`).
+  Demonstrates arithmetic and bitwise operations, including addition, subtraction, modulo, shifts, and logical operators. Outputs results with labeled descriptions.
 
 - [x] 4.02 — Enum  
-  Using `enum` to define named integer constants and improve code readability.
+  Defines an `enum` with constants and demonstrates their values and relationships, including arithmetic within the `enum`.
 
 - [x] 4.03 — printf with %d  
-  Printing integer values using `printf` with the `%d` format specifier.
+  Explores formatting integers with `printf`, showcasing alignment, padding, and precision.
 
 - [x] 4.04 — printf and Modulo Operation  
-  Using the modulo operator `%` together with `printf` to display results.
+  Demonstrates string formatting with `printf`, including width and precision modifiers for strings.
 
 - [x] 4.05 — get_and_zero  
-  Function that retrieves a value and resets the original variable to zero.
+  Implements a function that retrieves the value of a variable, resets it to zero, and returns the original value.
 
 - [x] 4.06 — put_sum  
-  Function that calculates and prints the sum of given numbers.
+  Calculates the sum of three integers, updates all variables with the sum, and returns the result.
 
 - [x] 4.07 — space_counter (for loop)  
-  Counting spaces in input text using a `for` loop.
+  Counts spaces in a string using a `for` loop and updates a global counter.
 
 - [x] 4.08 — space_counter (recursion)  
-  Counting spaces in input text using a recursive function.
+  Recursively counts spaces in a string, demonstrating a functional approach to the same problem.
 
 - [ ] 4.09
 - [ ] 4.10
@@ -48,11 +48,3 @@ This section focuses on core C language fundamentals: arithmetic operations, bit
 - [ ] 4.26
 - [ ] 4.27
 - [ ] 4.28
-- [ ] 4.29
-- [ ] 4.30
-- [ ] 4.31
-- [ ] 4.32
-- [ ] 4.33
-- [ ] 4.34
-- [ ] 4.35
-- [ ] 4.36
