@@ -28,7 +28,11 @@ This section focuses on core C language fundamentals: arithmetic operations, bit
 - [x] 4.08 — space_counter (recursion)  
   Recursively counts spaces in a string, demonstrating a functional approach to the same problem.
 
-- [ ] 4.09
+- [ ] 4.09 line_stats (character-by-character input)
+  Reads input character by character and for each line prints:
+  word count, even/odd-length word counts, long/short word counts,
+  A-z pattern matches, max/min word lengths, max space sequence,
+  bracket balance (YES/NO), and empty bracket pair count.
 - [ ] 4.10
 - [ ] 4.11
 - [ ] 4.12
