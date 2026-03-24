@@ -42,7 +42,9 @@ void result_write() {
 	printf("Words starting with A and ending with z are %d\n", az_words);
 	printf("The longest words has %d chars, The shortest has %d\n", max_word_len, min_word_len);
 	printf("Max space series: %d\n", max_space_series);
-	
+	printf("%s\n", (!balance_broken && bracket_balance == 0) ? "YES" : "NO");
+	printf("Empty brackets (): %d\n", empty_brackets_count);
+	printf(">>> COUNTER PROGINTRO 4-09. C. DASTAN MEDETBEKOV <<<\n");
 }
 
 void c_len_des () {
@@ -59,7 +61,7 @@ void words_len_max_min() {
 void a_btw_z() {
 	if ((first_char >= 'A' && first_char <= 'Z') && (last_char >= 'a' && last_char <= 'z')) az_spec_words++;
 }
-:void a_z() {
+void a_z() {
 	if (first_char == 'A' && last_char == 'z') az_words++;
 }
 int main() {
@@ -118,6 +120,13 @@ int main() {
 			}
 			//else if(in_word == 1) {
 			//}
+			if (c == '(') bracket_balance++;
+			if (c == ')') {
+    				bracket_balance--;
+				if (bracket_balance < 0) balance_broken = 1;
+			}
+			if (c == ')' && prev_ch == '(') empty_brackets_count++;
+			if (c == ')' && prev_ch == '(') empty_brackets_count++;
 			in_word = 1;
 			current_word_len++;
 		}
