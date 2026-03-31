@@ -33,8 +33,8 @@ This section focuses on core C language fundamentals: arithmetic operations, bit
   word count, even/odd-length word counts, long/short word counts,
   A-z pattern matches, max/min word lengths, max space sequence,
   bracket balance (YES/NO), and empty bracket pair count.
-- [ ] 4.10
-- [ ] 4.11
+- [x] 4.10
+- [x] 4.11
 - [ ] 4.12
 - [ ] 4.13
 - [ ] 4.14
