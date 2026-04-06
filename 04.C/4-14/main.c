@@ -1,13 +1,19 @@
 #include <stdio.h>
 
-int main() {
-    char c;
-    printf("HELLO! please, write!\n");
-    while((c = getchar()) != '\n') {
-        if (c != ' ') {
-            putchar(c);
+void clean_spaces(char *s) {
+    int j = 0;;
+    for (int i = 0; s[i] != '\0'; i++) {
+        if (i[s] != ' ') {
+            j[s] = i[s];
+            j++;
         }
     }
-    return 0;
+    j[s] = '\0';
+}
+
+int main() {
+    char str[] = "Hell o W o r l d th is the game ! ! ! !";
+    clean_spaces(str);
+    printf("%s\n", str);
 
 }
