@@ -1,18 +1,6 @@
 #include <stdio.h>
-
-long long n, m;
-
-void looperman() {
-    for (int i = 0; ; i++) {
-
-    }
-}
-
-void get_char() {
-    printf("Please, write where we should start to count: ");
-    scanf("%lld", &n);
-    printf("\n Please, write where we should stop to count: ");
-    scanf("%lld", &m);
+void my_atoll(char *src) {
+    
 }
 
 int main(int argc, char **argv) {
