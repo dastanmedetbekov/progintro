@@ -35,12 +35,12 @@ This section focuses on core C language fundamentals: arithmetic operations, bit
   bracket balance (YES/NO), and empty bracket pair count.
 - [x] 4.10
 - [x] 4.11
-- [ ] 4.12
-- [ ] 4.13
-- [ ] 4.14
-- [ ] 4.15
-- [ ] 4.16
-- [ ] 4.17
+- [x] 4.12
+- [x] 4.13
+- [x] 4.14
+- [x] 4.15
+- [x] 4.16
+- [x] 4.17
 - [ ] 4.18
 - [ ] 4.19
 - [ ] 4.20
