@@ -1,1 +1,2 @@
-Helllo it is the way I want to understand the my way
+We should use long for solving 2-{40..44} 
+
