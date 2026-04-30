@@ -41,7 +41,7 @@ This section focuses on core C language fundamentals: arithmetic operations, bit
 - [x] 4.15
 - [x] 4.16
 - [x] 4.17
-- [ ] 4.18
+- [ ] 4.18. It is harder than I thought. I need to read book to understand to solve this
 - [ ] 4.19
 - [ ] 4.20
 - [ ] 4.21
