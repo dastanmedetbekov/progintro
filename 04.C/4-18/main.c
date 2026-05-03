@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "forty.h"
 
 #if !defined(TASK)
 #error Please define which task you wanna run!
