@@ -38,7 +38,7 @@ int main()
             {
                 capacity *= 2;
                 storage = realloc(storage, capacity * sizeof(number_tracker));
-                printf("REALLOC\n");
+                // printf("REALLOC\n");
             }
             storage[total_unique].value = val;
             storage[total_unique].count = 1;
