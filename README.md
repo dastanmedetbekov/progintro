@@ -5,7 +5,7 @@
 - February 2026. Starting to read the second volume. C;
 
 # 2. Pascal
-# 3. Assebly
+# 3. Assembly
 # 4. C
 # 5. OS
 
