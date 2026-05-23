@@ -96,6 +96,45 @@ void print_vertical(Line *l) {
 }
 
 int main() {
+    int ch;
+    Line line;
+    Word current_word;
+
+    init_line(&line);
+    init_word(&current_word);
+    int in_word = 0;
+
+    while ((ch = getchar()) != EOF) {
+        if (ch == ' ' || ch == '\t') {
+            if (in_word) {
+                append_word(&line, current_word);
+                init_word(&current_word);
+                in_word = 0;
+            }
+        }
+        else if (ch == '\n') {
+            if (in_word) {
+                append_word(&line, current_word);
+                init_word(&current_word);
+                in_word = 0;
+            }
+            print_vertical(&line);
+            free_line(&line);
+            init_line(&line);
+        }
+        else {
+            append_char(&current_word, (char)ch);
+            in_word = 1;
+        }
+    }
+
+    if (in_word) {
+        append_word(&line, current_word);
+    }
+    if (line.count > 0) {
+        print_vertical(&line);
+        free_line(&line);
+    }
 
     return 0;
 }
