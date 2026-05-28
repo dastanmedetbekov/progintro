@@ -1,4 +1,5 @@
 # progintro
+For solving
 
 # Logs
 - October 2025. Starting to read the first volume. Math; Pascal; Unix-Terminal; Assembly;
