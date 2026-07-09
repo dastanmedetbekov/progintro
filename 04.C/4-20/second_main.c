@@ -4,18 +4,21 @@
 static char *grow_char_buffer(char *old_buf, size_t old_cap, size_t new_cap)
 {
     char *new_buf = malloc(new_cap * sizeof(char));
+    // checking if there any NEW_BUF
     if (new_buf == NULL) {
-        fprintf(stderr, "ERROR\n");
+        fprintf(stderr, "ERROR\n"); // error printer
         exit(1);
     }
-    size_t i;
+    size_t i; // creating I to use it on FOR.
     for (i = 0; i < old_cap; i++) {
         new_buf[i] = old_buf[i];
     }
+    // I changed it from memcpy to for
     free(old_buf);
     return new_buf;
 }
 
+// adding words to words array and if there no place to put new words it gets new place to grow
 static char **grow_words_array(char **old_arr, size_t old_cap, size_t new_cap)
 {
     char **new_arr = malloc(new_cap * sizeof(char *));
