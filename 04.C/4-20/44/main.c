@@ -109,6 +109,9 @@ int main(void)
             }
 
             flush_digits_line(words, words_count);
+            for (size_t i = 0; i < words_count; i++) {
+                free(words[i]);
+            }
             free(words);
 
             words = NULL;
@@ -140,6 +143,9 @@ int main(void)
     }
     if (words_count > 0) {
         flush_digits_line(words, words_count);
+        for (size_t i = 0; i < words_count; i++) {
+            free(words[i]);
+        }
         free(words);
     }
 

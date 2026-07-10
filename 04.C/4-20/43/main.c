@@ -121,8 +121,10 @@ int main(void)
             }
 
             flush_vertical_line(words, words_count);
+            for (size_t i = 0; i < words_count; i++) {
+                free(words[i]);
+            }
             free(words);
-
             words = NULL;
             words_count = 0;
             words_cap = 0;
@@ -152,6 +154,9 @@ int main(void)
     }
     if (words_count > 0) {
         flush_vertical_line(words, words_count);
+        for (size_t i = 0; i < words_count; i++) {
+            free(words[i]);
+        }
         free(words);
     }
 
