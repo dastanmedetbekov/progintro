@@ -105,6 +105,8 @@ void node_destroy(struct node *s) {
 
     node_destroy(s->left);
     node_destroy(s->right);
+    free(s->key);
+    free(s->data);
     free(s);
 }
 
@@ -124,6 +126,15 @@ void inherit_printer(struct node *s) {
     printf("%s born in %d", s->key, *year);
 }
     
+void rotate_right(struct tree *s, struct node *y) {
+    
+    struct node *x = y->left;
+    struct node *b = x->right;
+
+    y->left = b;
+
+    x->right = y;
+}
 
 
 
@@ -132,11 +143,16 @@ int main() {
     tree_init(&main_tree);
     int trash;
     for (int i = 0; i < 30; i++) {
-        trash = i + 1998;
-        void *trash_data = &trash;
         char buffer[20];
         sprintf(buffer, "%d", i);
-        tree_insert(&main_tree, buffer, trash_data);
+
+        char *key_copy = malloc(strlen(buffer) + 1);
+        strcpy(key_copy, buffer);
+
+        int *year = malloc(sizeof(int));
+        *year = i + 1998;
+
+        tree_insert(&main_tree, key_copy, year);
     }
     inherit_printer(main_tree.root);
     tree_destroy(&main_tree);
